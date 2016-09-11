@@ -1,0 +1,18 @@
+/* line 12, ../sass/css3.scss */
+.webdemo-sec {
+  -moz-box-shadow: 1px 1px 3px 2px #cfcecf;
+  -webkit-box-shadow: 1px 1px 3px 2px #cfcecf;
+  box-shadow: 1px 1px 3px 2px #cfcecf;
+}
+
+/* line 22, ../sass/css3.scss */
+div {
+  -moz-appearance: button;
+  -webkit-appearance: button;
+}
+
+/* line 28, ../sass/css3.scss */
+.test-inline-block {
+  display: inline-block;
+  vertical-align: middle;
+}

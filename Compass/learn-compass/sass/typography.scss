@@ -1,0 +1,105 @@
+// links
+// lists
+// text
+// vertical rhythm
+
+// @import "compass/typography"
+
+@import "compass/typography/links";
+a {
+	@include hover-link();
+	@include link-colors(#00c, #0cc, #c0c, #ccc, #cc0);
+	// @include unstyled-link();
+}
+
+
+
+@import "compass/typography/lists";
+.list-unstyled {
+	@include no-bullets();
+}
+.list-unstyled-li {
+	@include no-bullet();
+}
+.list-inline {
+	@include inline-list();
+}
+.list-horizontal {
+	@include horizontal-list();
+}
+
+
+
+@import "compass/typography/text";
+.text-force-wrap {
+	@include force-wrap();
+}
+.text-nowrap {
+	@include nowrap();
+}
+$use-mozilla-ellipsis-binding: true;
+.test-ellipsis {
+	@include ellipsis();
+}
+.test-hide {
+	@include hide-text();
+	// @include squish-text();
+}
+.btn-find {
+	@include replace-text("http://cdn/btn.png");
+}
+
+
+
+@import "compass/reset";
+@import "compass/typography/vertical_rhythm";
+// 16 * 5 = 24px
+$base_font_size: 16px;
+$base_line_height: 24px;
+@include establish-baseline();
+
+body {
+	@include debug-vertical-alignment();
+}
+
+h1 {
+	// font-size: 3em;
+	// line-height: 1.5em;
+	@include adjust-font-size-to(48px); //3em
+}
+
+p {
+	font-size: 1em;
+	line-height: 1.5em;
+	// margin: 1.5em 0;
+	@include leader(2);
+	@include trailer();
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

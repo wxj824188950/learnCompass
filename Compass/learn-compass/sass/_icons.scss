@@ -1,0 +1,10 @@
+@import "compass/utilities/sprites";
+
+@import "logo/*.png";
+$logo-layout: horizontal;
+
+@include all-logo-sprites();
+
+.main-logo {
+	@include logo-sprite("1");
+}

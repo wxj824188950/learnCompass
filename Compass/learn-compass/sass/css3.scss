@@ -1,0 +1,30 @@
+//跨浏览器CSS3能力
+
+@import "compass/css3";
+@import "compass/support";
+
+// @debug browsers();
+$supported-browsers: chrome, firefox;
+$browser-minimum-versions: ("ie": "8");
+
+
+
+.webdemo-sec {
+	// box-shadow: 1px 1px 3px 2px #cfcecf;
+	// -weblit-box-shadow
+	// -moz-box-shadow
+
+	@include box-shadow(1px 1px 3px 2px #cfcecf);
+
+}
+
+
+div {
+	// appearance: button;
+	@include appearance("button");
+}
+
+
+.test-inline-block {
+	@include inline-block();
+}

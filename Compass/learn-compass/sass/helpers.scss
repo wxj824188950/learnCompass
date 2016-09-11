@@ -1,0 +1,25 @@
+@import "compass";
+
+
+
+.analyzer-logo {
+	//background-image: url('data:image/png;base64,1jhdjchksdue3432hnk==');
+	background-image: inline-image('analyzer.png');
+}
+
+.main-logo {
+	//background-image: url('../images/main.png');
+	background-image: image-url('main.png');
+	//stylesheet-url
+	//font-url
+}
+
+
+//color-stops
+
+//font-files
+//@include font-face()
+
+#{append-selector("p , div, span", ".bar")} {
+	color: #000;
+}

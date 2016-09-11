@@ -1,0 +1,86 @@
+@import "compass/utilities";
+
+
+//color
+@debug brightness(#000);
+
+
+//print
+@import "compass/utilities/print";
+@include print-utilities(screen);
+
+
+//tables
+.goods-price {
+	$table-color: #7a98c6;
+	@include outer-table-borders();
+	@include inner-table-borders(1px, darken($table-color, 40%));
+
+	@include table-scaffolding();
+
+	@include alternating-rows-and-columns($table-color, adjust-hue($table-color, -120deg), #222222);
+} 
+
+
+//general
+@import "compass/utilities/general";
+@import "compass/support";
+$browser-minimum-versions: ("ie": "6");
+.clearfix {
+	//@include clearfix();
+	//@include pie-clearfix();
+	@include legacy-pie-clearfix();
+}
+
+.pull-left {
+	@include float(left);
+}
+
+@debug omitted-usage("ie", "6");
+
+.need-has-layout {
+	@include has-layout();
+}
+
+.underscore-hack-display {
+	@include underscore-hack(display, block, inline);
+}
+
+.test-min-height {
+	@include min-height(10px);
+}
+
+.tag-cloud-container {
+	@include tag-cloud(24px);
+}
+
+
+//sprites
+@import "icons";
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

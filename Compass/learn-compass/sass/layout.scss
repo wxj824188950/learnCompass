@@ -1,0 +1,26 @@
+@import "compass/layout";
+
+// @import "compass/layout/grid-background";
+// @import "compass/layout/sticky-footer";
+// @import "compass/layout/stretching";
+
+
+
+.stretch-full {
+	@include stretch();
+	// @include stretch(top, right, bottom, left);
+	// @include stretch($offset-top: 3px, $offset-bottom: 4px, $offset-left: 5px, $offset-right: 6px);
+}
+
+
+
+
+@include sticky-footer(30px);
+// @include sticky-footer(30px, "myroot", "myroot-footer", "myfooter");
+
+
+
+$grid-background-column-color: rgba(255, 0, 0, 255);
+#root {
+	@include grid-background();
+}
